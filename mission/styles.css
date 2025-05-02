@@ -4,17 +4,19 @@
     padding: 30px;
     font-family: 'Times New Roman', serif;
     border: 1px solid #ccc;
-    background-color: white;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+}
+
+.dark body {
+    background-color: #333;
+    color: white;
 }
 
 header {
-    background-color: white;
     padding: 20px 0;
     text-align: center;
     
@@ -38,7 +40,7 @@ h1 {
 h2 {
     font-size: 1em;
     margin: 0;
-    color: #006EB6;
+    color: #4F9ACF;
     padding: 20px 0;
 }
 
@@ -50,6 +52,10 @@ h2::after {
     border-bottom: 1.5px solid #ccc;  
 }
 
+.dark h2 {
+    color: #4F9ACF;
+}
+
 h3 {
     font-size: 20px;
     margin: 0;
@@ -57,7 +63,6 @@ h3 {
 }
 
 footer {
-    background-color: white;
     padding: 10px 0;
     bottom: 0;
 }
