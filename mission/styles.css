@@ -11,7 +11,7 @@ body {
     padding: 0;
 }
 
-.dark body {
+body.dark {
     background-color: #333;
     color: white;
 }
@@ -77,4 +77,11 @@ footer {
 p, li{
     margin:  10px;
     padding: 10px;
+}
+
+#theme-select {
+    display: block;
+    margin: 10px auto;
+    padding: 2px;
+    font-size: 1em;
 }
