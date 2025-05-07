@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, san-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border:#ebebeb 5px solid;
+  box-shadow: #333 5px 5px 5px;
+  object-fit: cover;
+  display: block;
+}
+
+header, footer {
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    font-family: var(--primary-font);
+}
+
+header {
+    font-size: 3em;
+}
+
+header h2 {
+    font-size: .6em;
+    margin: 0;
+}
+
+nav {
+    font-size: .4em;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    background-color: gainsboro;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 1rem; 
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+a:link {
+    color: var(--text-light);
+}
+
+a:visited {
+    color: var(--accent-color);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.3em;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  
+
+@media screen and (min-width: 700px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header h2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header h2 {
+        display: none;
+    }
+}
