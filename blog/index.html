@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids Read for Fun</title>
+  <link rel="stylesheet" href="blog.css" />
+  <script src="blog.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Kids Read for Fun</h1>
+        <nav>
+        <a href="about.html">About</a>
+        <a href="archive.html">Archive</a>
+            <div class="dropdown">
+                <button class="dropbtn">Search</button>
+                <div class="dropdown-content">
+                <form action="search.html" method="get">
+                    <input type="text" name="q" placeholder="Search books..." />
+                    <button type="submit">Go</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-container">
+        <section class="left-column">
+            <p><strong>July 5, 2022</strong></p>
+            <p>10–14</p>
+            <p>Fantasy</p>
+            <p>★★★★</p>
+        </section>
+
+        <section class="center-column">
+            <h2>Septimus Heap Book One: Magyk</h2>
+            <div class="book-image-placeholder">
+                <img src="book-placeholder.png" alt="Book cover" />
+            </div>
+            <p>Lorem ipsum dolor sit amet et delectus accommodare...</p>
+        </section>
+
+        <section class="right-column">
+            <form>
+                <label for="sort">Sort:</label>
+                <select id="sort" name="sort">
+                <option value="">Select</option>
+                </select><br />
+
+                <label for="age">Age:</label>
+                <select id="age" name="age">
+                <option value="">Select</option>
+                </select><br />
+
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                <option value="">Select</option>
+                </select><br />
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                <option value="">Select</option>
+                </select>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
