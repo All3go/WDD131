@@ -12,29 +12,30 @@ header h1 {
   font-family: 'Rubik Dirt', cursive;
 }
 
-
 header {
   background-color: #89BD9E;
-  color: white;
+  color: #1F3B2C; /* More accessible than white */
   padding: 20px;
   text-align: center;
   border-bottom: 4px solid #D83134;
 }
 
+.nav-wrapper {
+  width: 100%;
+  border-top: 4px solid #D83134;
+  background-color: #89BD9E;
+}
 
 nav {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 4px solid #D83134;
+  padding: 10px 20px;
 }
-
 
 nav a,
 .dropbtn {
-  color: white;
+  color: #1F3B2C; /* Dark green for better contrast */
   text-decoration: none;
   font-weight: bold;
   background: none;
@@ -44,7 +45,6 @@ nav a,
   cursor: pointer;
   padding: 0;
 }
-
 
 nav a:hover,
 .dropbtn:hover {
@@ -91,8 +91,6 @@ nav a:hover,
 }
 
 .left-column {
-  flex: 1;
-  padding: 10px;
   border-right: 2px solid #D83134;
   text-align: right;
 }
@@ -109,7 +107,7 @@ nav a:hover,
 
 .right-column {
   background-color: #89BD9E;
-  color: white;
+  color: #1F3B2C; /* Updated for accessibility */
   padding: 20px;
   border: 2px solid #D83134;
 }
