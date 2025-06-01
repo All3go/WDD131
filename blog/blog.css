@@ -23,7 +23,6 @@ header {
 .nav-wrapper {
   width: 100%;
   border-top: 4px solid #D83134;
-  background-color: #89BD9E;
 }
 
 nav {
@@ -84,20 +83,40 @@ nav a:hover,
   gap: 20px;
 }
 
-.left-column,
-.center-column,
-.right-column {
-  flex: 1;
+.left-column {
+  width: 100px; /* Adjust as needed */
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* This aligns all content to the right */
+  text-align: right; /* This ensures text inside is right-aligned */
+}
+
+.left-column p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+
+.center-column {
+  flex: 3;
   padding: 10px;
 }
 
-.left-column {
-  border-right: 2px solid #D83134;
-  text-align: right;
+.right-column {
+  flex: 1;
+  background-color: #89BD9E;
+  color: #1F3B2C;
+  padding: 20px;
+  border: 2px solid #D83134;
 }
 
 .center-column {
   text-align: center;
+}
+.center-column h2 {
+  color: #D83134;
+  text-align: left;
 }
 
 .book-image-placeholder img {
@@ -105,6 +124,36 @@ nav a:hover,
   height: auto;
   border: 2px solid #D83134;
 }
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.book-meta {
+  text-align: right;
+  padding-right: 10px;
+  width: 150px;
+  flex-shrink: 0;
+  border-right: 2px solid #D83134;
+}
+
+.book-post {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #D83134;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.book-row {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+
 
 .right-column {
   background-color: #89BD9E;
@@ -123,4 +172,14 @@ select {
   padding: 5px;
   margin-top: 5px;
   border: 1px solid #ccc;
+}
+
+.book-entry {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #D83134;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }

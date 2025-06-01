@@ -1,3 +1,4 @@
+//By Austin Linford
 function getGrades(inputSelector) {
   const grades = document.querySelector(inputSelector).value;
   const gradesArray = grades.split(",");
