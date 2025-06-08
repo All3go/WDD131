@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.payment-form {
+  position: relative;
+  width: 320px;
+}
+
+.card-front, .card-back {
+  background: #e0e0e0;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.card-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; /* ensure it stays above the back */
+  transform: translate(-90px, 80px);
+  background: #e0e0e0;
+}
+
+/* Position the favicon at top right of the front card */
+.card-front img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: auto;
+  z-index: 3; /* on top of the front card content */
+}
+
+
+.card-back {
+  margin-top: 110px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cvc-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.card-back input[type="text"] {
+  width: 40px; /* smaller width */
+}
+
+
+.total {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.cvc-input {
+    width: 20px;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 14px;
+    align-items: right;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card-details > div {
+  width: 48%;
+}
+
+.expiration-inputs {
+  display: flex;
+  gap: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.black-stripe {
+  background-color: black;
+  height: 40px;
+  width: calc(100% + 40px); /* extend beyond padding */
+  margin: -20px 0 20px -20px; /* top, right/left, bottom */
+  border-radius: 4px;
+}
+
