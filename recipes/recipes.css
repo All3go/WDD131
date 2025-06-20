@@ -1,0 +1,216 @@
+/* Reset & Basics */
+ @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+:root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fff;
+  padding: 1rem;
+  color: #222;
+}
+
+
+header img {
+  width: auto;
+  height: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+}
+
+/* Search Bar */
+header input[type="text"] {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+header input[type="text"]::placeholder {
+  color: #999;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Recipe Card */
+.recipe-card {
+  border: 2px solid #605959;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: white;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Tag */
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border: 3px solid #000;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  font-family: var(--primary-font);
+  max-width: fit-content;
+}
+
+/* Title */
+.recipe-title {
+  font-size: 2.5rem;
+  color: #2196f3;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  display: block;
+}
+
+/* Rating */
+.rating {
+  color: #fbc02d;
+  font-size: 1.1rem;
+}
+
+/* Description */
+.description {
+  font-size: 0.95rem;
+  color: #444;
+  font-family: var(--primary-font);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  justify-content: end;
+}
+
+footer .social {
+  margin-top: 0.5rem;
+}
+
+footer img {
+  width: 24px;
+  margin: 0 0.3rem;
+}
+
+/* Responsive Layout */
+/* Base styles remain the same from before — only changes below */
+
+.recipe-card .description {
+  display: none; /* hidden by default (mobile) */
+}
+
+/* Search form container */
+#search-form {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  overflow: hidden;
+  width: 250px;
+  background-color: #fff;
+}
+
+/* Make header stack vertically and center align */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Search form container */
+#search-form {
+  display: flex;
+  width: 320px;
+  border: 2px solid gray;
+  border-radius: 12px; /* gentle rounded corners */
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Input styles */
+#search-form input[type="search"] {
+  flex: 1;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  font-family: var(--primary-font);
+  color: var(--text-dark);
+  border-radius: 12px 0 0 12px; /* round left corners only */
+}
+
+/* Placeholder text style */
+#search-form input[type="search"]::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Button styles */
+#search-form button {
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 0 12px 12px 0; /* round right corners only */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (min-width: 600px) {
+  .recipe-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .recipe-card img {
+    width: 250px;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  .recipe-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recipe-card .description {
+    display: block; /* show on larger screens */
+  }
+}
+
