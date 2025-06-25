@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="recipes.css">
-    <script src="recipes.js" defer></script>
+    <script type="module" src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <img src="images/recipe-book.png" alt="Line art of a book with the chaoe of a chefs hat on the cover">
-        <h1>RecipeBook</h1>
-         <form id="search-form" role="search" onsubmit="return false;">
-            <input 
-            type="search" 
-            id="search-input" 
-            placeholder="find a recipe" 
-            aria-label="Search recipes"
-            >
-            <button type="submit" aria-label="Search">
-            🔍
-            </button>
+        <div class="branding">
+            <img src="images/recipe-book.png" alt="Logo">
+            <h1>Recipe Book</h1>
+        </div>
+        <form id="search-form">
+            <input type="search" placeholder="Find a recipe">
+            <button>🔍</button>
         </form>
+
     </header>
     <main>
          <section id="recipe-gallery">

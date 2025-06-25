@@ -22,7 +22,6 @@ body {
   color: #222;
 }
 
-
 header img {
   width: auto;
   height: 100px;
@@ -147,8 +146,14 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 1rem;
 }
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 
 /* Search form container */
 #search-form {
