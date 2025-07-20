@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listings | Linford Homes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="listingsPage.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/Light logo.png" alt="Linford Homes logo" />
+      <span>Linford Homes</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="linfordhomes.html">Home</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main id="listings" data-page="listings">
+    <h1>Listings</h1>
+
+    <!-- Search Bar -->
+    <form id="search-form">
+        <div class="search-wrapper">
+            <input type="text" id="location" placeholder="City or Town" />
+            
+            <!-- Dropdown filters (initially hidden) -->
+                <div class="filters" id="filters">
+                <input type="number" id="min-price" placeholder="Min Price" />
+                <input type="number" id="max-price" placeholder="Max Price" />
+                <input type="number" id="bedrooms" placeholder="Bedrooms" />
+                <input type="number" id="bathrooms" placeholder="Bathrooms" />
+            </div>
+
+            <button type="submit">Search</button>
+        </div>
+    </form>
+
+
+    <!-- Listing Cards Grid -->
+    <div class="listings-grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Linford Homes | Serving East Idaho</p>
+  </footer>
+</body>
+</html>
+

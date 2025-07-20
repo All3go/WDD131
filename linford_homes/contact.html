@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Kim Linford at Linford Homes for your real estate needs in East Idaho." />
+  <meta name="author" content="Austin Linford" />
+  <meta name="keywords" content="contact, Kim Linford, Linford Homes, East Idaho real estate" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Contact | Linford Homes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="contactForm.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/Light logo.png" alt="Linford Homes logo" />
+      <span>Linford Homes</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="images/kim_linford.jpg" alt="Kim Linford smiling in front of wintry pine trees" />
+        </div>
+        <div class="hero-text">
+          <h1>Contact Kim Linford</h1>
+          <div class="contact-info">
+            <p><strong>Phone:</strong> (208) 206-9239</p>
+            <p><strong>Email:</strong> <a href="mailto:kim@linfordhomes.com">kim@linfordhomes.com</a></p>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a> |
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Get in Touch</h2>
+      <form id="contact-form" action="#" method="POST" novalidate>
+        <label for="name">Name<span aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+        <label for="email">Email<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="(Optional)" />
+
+        <label for="message">Message<span aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Linford Homes | Serving East Idaho</p>
+  </footer>
+</body>
+</html>
